@@ -1,0 +1,65 @@
+<div class="content-sidenav">
+
+    <div class="profile-intro">
+
+        <div class="photo">
+            <i class="fas fa-user-md"></i>
+        </div>
+        <div class="name">
+            <h2>
+                Carlos Martinez
+            </h2>
+        </div>
+
+    </div>
+
+    <!-- Menu de navegacion -->
+
+    <div class="box-menu">
+
+        <a [routerLink]="['/home']" routerLinkActive="active" class="link-icon">
+            <i class="fas fa-home"></i>
+            Inicio
+        </a>
+
+    </div>
+    <div class="box-menu">
+
+        <a class="link-icon dropAct">
+            <i class="fas fa-heartbeat"></i>
+            Citas Medicas
+        </a>
+        <ul class="dropMenu" routerLinkActive="active">
+            <li>
+                <a [routerLink]="['/citas']" routerLinkActive="active" >
+                    <i class="fas fa-angle-right"></i>
+                    Consultas
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/examenes']" routerLinkActive="active" >
+                    <i class="fas fa-angle-right"></i>
+                    Examenes
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="box-menu">
+
+        <a class="link-icon dropAct">
+            <i class="fas fa-tablets"></i>
+            Farmacia
+        </a>
+        <ul class="dropMenu" routerLinkActive="active">
+            <li>
+                <a [routerLink]="['/medicamentos']" routerLinkActive="active" >
+                    <i class="fas fa-angle-right"></i>
+                    Medicamentos
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
